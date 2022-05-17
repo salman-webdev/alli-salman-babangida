@@ -19,9 +19,9 @@
 
 </head>
 <body>
-    <header>
+    <header class="intro">
         <div class="header-name">
-            <h1>Salman</h1>
+            <a href="#home"><h1>Salman</h1></a>
         </div>
         <nav id="navbar">
             <a href="#home">Home</a>
@@ -31,32 +31,32 @@
         </nav>
     </header>
 
-    <section id="welcome-section">
-        <div class="welcome-section-info">
+    <section id="welcome-section" class="intro">
+        <div class="section-info">
             <h1>Hey, I am <span class="my-name">Salman</span><br>
             a <span class="my-name">self-taught</span><br>frontend developer.</h1>
             <p>I love to add clarity to complicated concepts<br> through designs. <br>
             Stick around to see my works</p>
             <a class="btn" href="#works">SEE MY WORK</a>
         </div>
-        <div class="welcome-section-img">
+        <div class="image">
             <i class="fa-solid fa-braille fa1"></i>
             <i class="fa-solid fa-braille fa2"></i>
-            <img src="images/salman.JPG" alt="Salman's Image">
+            <img class="image-img" src="images/salman.JPG" alt="Salman's Image">
         </div>
-        <div class="scroll-down">
+        <div class="scroll">
             <p>Scroll-Down</p><i class="fa-solid fa-arrow-down-long"></i>
         </div>
     </section>
     <section id="works">
-        <div class="works-header">
+        <div class="header">
             <p>Works</p><hr class="hr-line">
         </div>
-        <div class="works-info">
+        <div class="info">
             <p>Here are some of my most recent works</p>
         </div>
-        <div class="works-preview">
-            <div class="works-preview-img">
+        <div class="intro gap">
+            <div class="works-preview-img image">
                 <img src="images/Tingdog-screenshot.jpg" alt="tingdog-preview-image">
             </div>
             <div class="works-preview-details">
@@ -74,8 +74,8 @@
             </div>
         </div>
         <hr>
-        <div class="works-preview2">
-            <div class="works-preview-img">
+        <div class="works-preview2 intro gap">
+            <div class="works-preview-img image">
                 <img src="images/Sals-bakery-screenshot.jpg" alt="Sals-bakery-preview-image">
             </div>
             <div class="works-preview-details">
@@ -92,8 +92,8 @@
             </div>
         </div>
         <hr>
-        <div class="works-preview">
-            <div class="works-preview-img">
+        <div class="intro gap">
+            <div class="works-preview-img image">
                 <img src="images/Fela-tribute-screenshot.jpg" alt="fela-tribute-page-preview-image">
             </div>
             <div class="works-preview-details">
@@ -115,19 +115,19 @@
         </div>
     </section>
     <section id="about">
-        <div class="about-header">
+        <div class="header">
             <p>About</p><hr class="hr-line">
         </div>
-        <div class="about-info">
+        <div class="info">
             <p>Get to know me better</p>
         </div>
-        <div class="about-details">
-            <div class="about-image">
-                <i class="fa-solid fa-braille fa3"></i>
-                <i class="fa-solid fa-braille fa4"></i>
-                <img src="images/about-salman2.jpg" alt="my picture">
+        <div class="about-details intro">
+            <div class="image">
+                <i class="fa-solid fa-braille fa1"></i>
+                <i class="fa-solid fa-braille fa2"></i>
+                <img class="image-img" src="images/about-salman2.jpg" alt="my picture">
             </div>
-            <div class="more-about-me">
+            <div class="section-info">
                 <p>I'm <span class="my-name">Alli Salman Babangida</span>, 21 year old Nigerian.
                 I am self-taught frontend developer who loves creativity. I enjoy solving problems with clean scalable solutions
                 </p>
@@ -148,23 +148,23 @@
         </div>
     </section>
     <section id="contact">
-        <div class="contact-header">
+        <div class="header">
             <p>Contact</p><hr class="hr-line">
         </div>
-        <div class="contact-info">
+        <div class="info">
             <p>Interested in working with me or perhaps just want to talk, dont be shy!!!</p>
             <p>Reach out to me through my social media or by filling out the contact form.</p>
-            <p>My email:<span class="my-email"> alli.salman16@gmail.com</span></p>
+            <p>My email:<span class="my-name"> alli.salman16@gmail.com</span></p>
         </div>
-        <div class="contact-form">
+        <div class="intro gap">
             <form action="">
                 <div class="form-group">
-                    <label for="name" id="name-label"> Your Name</label>
+                    <label for="name" id="label"> Your Name</label>
                     <input type="text" class="form-control" placeholder="Your name" required>
                 </div>
                
                 <div class="form-group">
-                    <label for="email" id="email-label">Your Email</label>
+                    <label for="email" id="label">Your Email</label>
                     <input type="email" class="form-control" name="email" id="email" placeholder="example@email.com" required>
                 </div>
 
@@ -177,13 +177,13 @@
                     <button type="submit" id="submit"  class="btn">SEND MESSAGE</button>
                 </div>
             </form>
-            <div class="social-down">
+            <div class="scroll">
                 <p>Social-Media</p><i class="fa-solid fa-arrow-down-long"></i>
             </div>
         </div>
     </section>
     <footer id="footer">
-        <div class="footer-items">
+        <div class="intro gap">
             <div class="copyright">
                 <p>© Copyright 2022 ALLI SALMAN BABANGIDA</p>
             </div>
