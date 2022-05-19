@@ -1,15 +1,32 @@
+
+//ACTIVE NAV LINK//
+const navBar = document.querySelector("#navbar").querySelectorAll("a");
+console.log(navBar);
+
+navBar.forEach(element => {
+    element.addEventListener("click", function(){
+        navBar.forEach(nav=>nav.classList.remove("active-nav"));
+
+        this.classList.add("active-nav");
+    });
+});
+
+
+//SKILLBOX TOGGLE FUNCTION//
+const skillbox = document.getElementsByClassName("skillbox");
+
+for (i = 0; i<skillbox.length; i++) {
+    skillbox[i].addEventListener("click", function(){
+        this.classList.add("active");
+    });
+}
+
+
 //FIXED HEADER ON SCROLL FUNCTION//
 window.onscroll = function() {fixedHeader()};
 
 var header = document.getElementById("fixed-header");
 const currentLocation = location.href;
-const navItem = document.querySelectorAll(".nav-item");
-
-for (i = 0; i<navItem.length; i++) {
-    if(navItem[i].href === currentLocation) {
-        navItem[i].className = "active-nav";
-    };
-}
 
 var sticky = header.offsetTop;
 
@@ -21,13 +38,5 @@ function fixedHeader() {
   }
 }
 
-//SKILLBOX TOGGLE FUNCTION//
-const skillbox = document.getElementsByClassName("skillbox");
-
-for (i = 0; i<skillbox.length; i++) {
-    skillbox[i].addEventListener("click", function(){
-        this.classList.add("active");
-    });
-}
 
 
