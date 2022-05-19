@@ -8,6 +8,7 @@
 
     <!--LINK FOR CSS STYLES-->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--LINK FOR GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,115 +20,115 @@
 
 </head>
 <body>
-    <header class="intro">
-        <div class="header-name">
+    <header class="intro" id="fixed-header">
+        <div class="header-name" data-aos="fade-right"  data-aos-duration="2000">
             <a href="#home"><h1>Salman</h1></a>
         </div>
-        <nav id="navbar">
-            <a href="#home">Home</a>
+        <nav id="navbar" data-aos="fade-left" data-aos-duration="2000">
+            <a href="#home" class="active-nav">Home</a>
             <a href="#works">Works</a>                                                                                                                                                                                                                                                                         
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section id="welcome-section" class="intro">
-        <div class="section-info">
+    <section id="home" id="welcome-section" class="intro">
+        <div class="section-info" data-aos="fade-right" data-aos-duration="3000">
             <h1>Hey, I am <span class="my-name">Salman</span><br>
             a <span class="my-name">self-taught</span><br>frontend developer.</h1>
             <p>I love to add clarity to complicated concepts<br> through designs. <br>
             Stick around to see my works</p>
-            <a class="btn" href="#works">SEE MY WORK</a>
+            <a class="btn" data-aos="fade-right" data-aos-duration="3000" href="#works">SEE MY WORK</a>
         </div>
-        <div class="image">
+        <div class="image" data-aos="fade-left" data-aos-duration="3000">
             <i class="fa-solid fa-braille fa1"></i>
             <i class="fa-solid fa-braille fa2"></i>
             <img class="image-img" src="images/salman.JPG" alt="Salman's Image">
         </div>
-        <div class="scroll">
-            <p>Scroll-Down</p><i class="fa-solid fa-arrow-down-long"></i>
+        <div class="scroll" data-aos="fade-left" data-aos-duration="3000">
+            <p>Scroll-Down</p><i class="fa-solid fa-arrow-down-long mva"></i>
         </div>
     </section>
     <section id="works">
-        <div class="header">
+        <div class="header" data-aos="fade-right" data-aos-duration="3000">
             <p>Works</p><hr class="hr-line">
         </div>
-        <div class="info">
+        <div class="info" data-aos="fade-right" data-aos-duration="3000">
             <p>Here are some of my most recent works</p>
         </div>
         <div class="intro gap">
-            <div class="works-preview-img image">
+            <div class="works-preview-img image" data-aos="fade-left" data-aos-duration="3000">
                 <img src="images/Tingdog-screenshot.jpg" alt="tingdog-preview-image">
             </div>
-            <div class="works-preview-details">
+            <div class="works-preview-details" data-aos="fade-right" data-aos-duration="3000">
                 <h2>TINGDOG</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Suscipit blanditiis vero a soluta assumenda animi dolorem rerum quidem voluptatem quae velit, 
                     officiis minus. Reprehenderit!
                 </p>
-                <ul>
+                <ul data-aos="fade-right" data-aos-duration="3000">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>BOOTSTRAP</li>
                 </ul>
-                <a class="btn" href="https://salmanroug.github.io/tingdog/">VISIT SITE</a>
+                <a class="btn" data-aos="fade-right" data-aos-duration="3000" href="https://salmanroug.github.io/tingdog/">VISIT SITE</a>
             </div>
         </div>
         <hr>
         <div class="works-preview2 intro gap">
-            <div class="works-preview-img image">
+            <div class="works-preview-img image" data-aos="fade-right" data-aos-duration="3000">
                 <img src="images/Sals-bakery-screenshot.jpg" alt="Sals-bakery-preview-image">
             </div>
-            <div class="works-preview-details">
+            <div class="works-preview-details" data-aos="fade-left" data-aos-duration="3000">
                 <h2>SALS BAKERY</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Suscipit blanditiis vero a soluta assumenda animi dolorem rerum quidem voluptatem quae velit, 
                     officiis minus. Reprehenderit!
                 </p>
-                <ul>
+                <ul  data-aos="fade-left" data-aos-duration="3000">
                     <li>HTML</li>
                     <li>CSS</li>
                 </ul>
-                <a class="btn" href="https://salmanroug.github.io/salman-bakery/">VISIT SITE</a>
+                <a class="btn" data-aos="fade-left" data-aos-duration="3000" href="https://salmanroug.github.io/salman-bakery/">VISIT SITE</a>
             </div>
         </div>
         <hr>
         <div class="intro gap">
-            <div class="works-preview-img image">
+            <div class="works-preview-img image" data-aos="fade-left" data-aos-duration="3000">
                 <img src="images/Fela-tribute-screenshot.jpg" alt="fela-tribute-page-preview-image">
             </div>
-            <div class="works-preview-details">
+            <div class="works-preview-details" data-aos="fade-right" data-aos-duration="3000">
                 <h2>FELA TRIBUTE PAGE</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Suscipit blanditiis vero a soluta assumenda animi dolorem rerum quidem voluptatem quae velit, 
                     officiis minus. Reprehenderit!
                 </p>
-                <ul>
+                <ul data-aos="fade-right" data-aos-duration="3000">
                     <li>HTML</li>
                     <li>CSS</li>
                 </ul>
-                <a class="btn" href="https://salmanroug.github.io/fela-tribute-page/">VISIT SITE</a>
+                <a class="btn" data-aos="fade-right" data-aos-duration="3000" href="https://salmanroug.github.io/fela-tribute-page/">VISIT SITE</a>
             </div>
         </div>
         <hr>
-        <div class="general-works">
+        <div class="general-works"data-aos="fade-down" data-aos-duration="3000" >
             <a class="btn" href="">VIEW ALL WORKS</a>
         </div>
     </section>
     <section id="about">
-        <div class="header">
+        <div class="header" data-aos="fade-right" data-aos-duration="3000">
             <p>About</p><hr class="hr-line">
         </div>
-        <div class="info">
+        <div class="info" data-aos="fade-right" data-aos-duration="3000">
             <p>Get to know me better</p>
         </div>
         <div class="about-details intro">
-            <div class="image">
+            <div class="image" data-aos="fade-left" data-aos-duration="3000">
                 <i class="fa-solid fa-braille fa1"></i>
                 <i class="fa-solid fa-braille fa2"></i>
                 <img class="image-img" src="images/about-salman2.jpg" alt="my picture">
             </div>
-            <div class="section-info">
+            <div class="section-info" data-aos="fade-right" data-aos-duration="3000">
                 <p>I'm <span class="my-name">Alli Salman Babangida</span>, 21 year old Nigerian.
                 I am self-taught frontend developer who loves creativity. I enjoy solving problems with clean scalable solutions
                 </p>
@@ -137,48 +138,48 @@
                 <p>My journey has been fueled by my insatiable desire to learn and grow, 
                     as well as an exorbitant amount of chocolate.
                 </p>
-                <div class="skillbox">
+                <div class="skillbox" data-aos="fade-right" data-aos-duration="3000">
                     <div class="label">Skills</div>
                     <div class="content">
                         <p>HTML</p> <p>CSS</p> <p>JAVASCRIPT</p> <p>JQUERY</p> <p>BOOTSTRAP</p> <p>WORDPRESS</p> <p>GIT</p> <p>NPM</p>
                     </div>
                 </div>
-                <a class="btn" href="">DOWNLOAD RESUME</a>
+                <a class="btn" data-aos="fade-right" data-aos-duration="3000" href="">DOWNLOAD RESUME</a>
             </div>
         </div>
     </section>
     <section id="contact">
-        <div class="header">
+        <div class="header" data-aos="fade-right" data-aos-duration="3000">
             <p>Contact</p><hr class="hr-line">
         </div>
-        <div class="info">
+        <div class="info" data-aos="fade-right" data-aos-duration="3000">
             <p>Interested in working with me or perhaps just want to talk, dont be shy!!!</p>
             <p>Reach out to me through my social media or by filling out the contact form.</p>
             <p>My email:<span class="my-name"> alli.salman16@gmail.com</span></p>
         </div>
         <div class="intro gap">
             <form action="">
-                <div class="form-group">
+                <div class="form-group" data-aos="fade-right" data-aos-duration="3000">
                     <label for="name" id="label"> Your Name</label>
                     <input type="text" class="form-control" placeholder="Your name" required>
                 </div>
                
-                <div class="form-group">
+                <div class="form-group" data-aos="fade-left" data-aos-duration="3000">
                     <label for="email" id="label">Your Email</label>
                     <input type="email" class="form-control" name="email" id="email" placeholder="example@email.com" required>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" data-aos="fade-right" data-aos-duration="3000">
                     <p>Your Message</p>
                  <textarea name="additional-comment" id="additional-comment" cols="30" rows="10" placeholder="Additional comment....."></textarea>
                 </div> 
     
-                <div class="form-group">
+                <div class="form-group" data-aos="fade-left" data-aos-duration="3000">
                     <button type="submit" id="submit"  class="btn">SEND MESSAGE</button>
                 </div>
             </form>
-            <div class="scroll">
-                <p>Social-Media</p><i class="fa-solid fa-arrow-down-long"></i>
+            <div class="scroll" data-aos="fade-right" data-aos-duration="3000">
+                <p>Social-Media</p><i class="fa-solid fa-arrow-down-long mva"></i>
             </div>
         </div>
     </section>
@@ -195,6 +196,11 @@
             </div>
         </div>
     </footer>
+    <!--JAVASCRIPT LINK-->
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
