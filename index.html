@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!--LINK FOR GOOGLE FONTS-->
+    <!--LINK FOR GOOGLE FONTS USED-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!--LINK FOR FONTAWESOME-->
+    <!--LINK FOR FONTAWESOME CDN-->
     <script src="https://kit.fontawesome.com/2f1880feda.js" crossorigin="anonymous"></script>
 
 </head>
@@ -40,7 +40,7 @@
             Stick around to see my works</p>
             <a class="btn" data-aos="fade-right" data-aos-duration="3000" href="#works">SEE MY WORK</a>
         </div>
-        <div class="image" data-aos="fade-left" data-aos-duration="3000">
+        <div class="image home-image" data-aos="fade-left" data-aos-duration="3000">
             <i class="fa-solid fa-braille fa1"></i>
             <i class="fa-solid fa-braille fa2"></i>
             <img class="image-img" src="images/salman.JPG" alt="Salman's Image">
@@ -157,28 +157,28 @@
             <p>Reach out to me through my social media or by filling out the contact form.</p>
             <p>My email:<span class="my-name"> alli.salman16@gmail.com</span></p>
         </div>
-        <div class="intro gap">
+        <div class="intro gap" data-aos="fade-right" data-aos-duration="3000">
             <form action="">
-                <div class="form-group" data-aos="fade-right" data-aos-duration="3000">
+                <div class="form-group">
                     <label for="name" id="label"> Your Name</label>
                     <input type="text" class="form-control" placeholder="Your name" required>
                 </div>
                
-                <div class="form-group" data-aos="fade-left" data-aos-duration="3000">
+                <div class="form-group">
                     <label for="email" id="label">Your Email</label>
                     <input type="email" class="form-control" name="email" id="email" placeholder="example@email.com" required>
                 </div>
 
-                <div class="form-group" data-aos="fade-right" data-aos-duration="3000">
+                <div class="form-group">
                     <p>Your Message</p>
                  <textarea name="additional-comment" id="additional-comment" cols="30" rows="10" placeholder="Additional comment....."></textarea>
                 </div> 
     
-                <div class="form-group" data-aos="fade-left" data-aos-duration="3000">
+                <div class="form-group">
                     <button type="submit" id="submit"  class="btn">SEND MESSAGE</button>
                 </div>
             </form>
-            <div class="scroll" data-aos="fade-right" data-aos-duration="3000">
+            <div class="scroll">
                 <p>Social-Media</p><i class="fa-solid fa-arrow-down-long mva"></i>
             </div>
         </div>
@@ -196,8 +196,11 @@
             </div>
         </div>
     </footer>
+    
     <!--JAVASCRIPT LINK-->
     <script src="index.js"></script>
+
+    <!--JAVASCRIPT LINK FOR PAGE ANIMATIONS-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
