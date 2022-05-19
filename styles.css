@@ -15,11 +15,6 @@ header, section, footer {
     padding: 3rem 7%;
 }
 
-.active-nav {
-    border-bottom: 3px solid hsl(157, 71%, 82%);
-    border-radius: 0.3rem;
-}
-
 .fixed-header {
     background: hsl(11, 45%, 24%);
     margin-top: 2rem;
@@ -84,6 +79,12 @@ hr {
 #navbar a:hover {
     color: hsl(157, 71%, 82%);
     font-weight: 500;
+}
+
+
+#navbar a.active-nav {
+    border-bottom: 3px solid hsl(157, 71%, 82%);
+    border-radius: 0.3rem;
 }
 
 #welcome-section, .about-details {
