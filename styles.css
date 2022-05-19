@@ -134,17 +134,17 @@ hr {
 
 .fa1 {
     position: absolute;
-    bottom: -25px;
-    left: -30px;
-    font-size: 3rem;
+    bottom: -12px;
+    left: -20px;
+    font-size: 2rem;
     animation: spin 2.5s linear infinite;
 }
 
 .fa2 {
     position: absolute;
-    top: -25px;
-    right: -30px;
-    font-size: 3rem;
+    top: -12px;
+    right: -20px;
+    font-size: 2rem;
     transform: rotate(180deg);
     animation: spin 2.5s linear infinite;
 }
@@ -350,3 +350,97 @@ hr {
         transform: translate(0, 0);
     }
     }
+
+
+@media (max-width: 1024px) {
+
+    body {
+      overflow-x: hidden;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+
+    form {
+        display: block;
+        width: 100%;
+    }
+
+    .fixed-header {
+        padding: 1rem 7%;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    .section-info {
+        flex-basis: 80%;
+        align-self: flex-start;
+    }
+
+    .section-info h1, p {
+        line-height: 2;
+    }
+
+    .home-image {
+        display: none;
+    }
+
+   .scroll {
+        align-self: center;
+        flex-basis: 20%;
+        position: relative;
+    }
+
+    .scroll p {
+        transform: rotate(0deg);
+        width: 7rem;
+    }
+
+    .mva::before, .mva::after {
+        animation: scroll 2.5s ease-in-out infinite;
+        content: none;
+        left: 40%;
+        position: absolute;
+        top: 50%;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(0, 70px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+        }
+
+    .gap {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .works-preview2 {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 2rem;
+    }
+
+    .about-details {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    #footer {
+        display: block;
+        text-align: center;
+    }
+}
