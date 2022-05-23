@@ -19,13 +19,14 @@ header, section, footer {
     background: hsl(11, 45%, 24%);
     margin-top: 2rem;
     margin-bottom: 2rem;
-    padding: .1rem 7%; 
+    padding: .4rem 7%; 
     position: fixed;
     left: 0;
     right: 0;
     top: -5%;
     transition: all 0.3s ease-in-out;
-    z-index: 1;
+    transform: translateZ(0);
+    z-index: 9999;
 }
 
 h1{
@@ -85,6 +86,10 @@ hr {
 #navbar a.active-nav {
     border-bottom: 3px solid hsl(157, 71%, 82%);
     border-radius: 0.3rem;
+}
+
+.menu-bar {
+    display: none;
 }
 
 #welcome-section, .about-details {
@@ -369,6 +374,37 @@ hr {
 
     .fixed-header {
         padding: 1rem 7%;
+        position: fixed;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 10%;
+        left: -100%;
+        width: 0%;
+        max-width: 35rem;
+        height: 100%;
+        background-color: hsl(11, 45%, 24%);
+        transition: all 500ms ease-in-out;
+        z-index: 100;
+    }
+
+    #navbar.show {
+        left: 0;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    #navbar a {
+        display: block;
+        flex-direction: column; 
+        color: hsl(0, 0%, 85%);
+        cursor: pointer;
+        margin: 2rem 0;
+    }
+
+    .menu-bar {
+        display: block;
     }
 
     #home {
