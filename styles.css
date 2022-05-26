@@ -11,6 +11,11 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 header, section, footer {
     padding: 3rem 7%;
 }
@@ -22,6 +27,7 @@ header, section, footer {
     padding: .4rem 7%; 
     position: fixed;
     left: 0;
+    overflow-x: hidden;
     right: 0;
     top: -5%;
     transition: all 0.3s ease-in-out;
@@ -171,7 +177,7 @@ hr {
 
 .scroll p {
     transform: rotate(90deg);
-    width: 7rem;
+    width: 100%;
 }
 
 .scroll i {
@@ -266,7 +272,7 @@ hr {
 }
 
 .skillbox.active .label::before {
-    content: "-";
+    content: "x";
 }
 
 .skillbox .content {
@@ -356,27 +362,99 @@ hr {
     }
     }
 
-
-@media (max-width: 1024px) {
-
-    body {
-      overflow-x: hidden;
-    }
+    @media only screen and (max-width: 1024px) {
+          html {
+              scroll-behavior: smooth;
+          }
+      
+          form {
+              display: block;
+              width: 100%;
+          }
+      
+          .fixed-header {
+              padding: 1.5rem 7%;
+              position: fixed;
+          }
     
-    html {
-        scroll-behavior: smooth;
-    }
+        #home {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+    
+        .section-info {
+            flex-basis: 40%;
+            align-self: flex-start;
+        }
+    
+        .section-info h1, p {
+            line-height: 2;
+        }
+    
+        .home-image {
+            display: flex;
+            flex-basis: 40%;
+        }
+    
+       .scroll {
+            margin: 0 auto;
+            align-self: center;
+            flex-basis: 20%;
+            position: relative;
+        }
+    
+        .scroll p {
+            transform: rotate(0deg);
+            width: 100%;
+        }
+    
+        .mva::before, .mva::after {
+            animation: scroll 2.5s ease-in-out infinite;
+            content: none;
+            left: 40%;
+            position: absolute;
+            top: 50%;
+        }
+    
+        @keyframes scroll {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(0, 70px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+            }
+    
+        .gap {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+        }
+    
+        .works-preview2 {
+            display: flex;
+            flex-direction: column-reverse;
+            row-gap: 2rem;
+        }
+    
+        .about-details {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+        }
+    
+        #footer {
+            display: block;
+            text-align: center;
+        }
+    }    
 
-    form {
-        display: block;
-        width: 100%;
-    }
 
-    .fixed-header {
-        padding: 1rem 7%;
-        position: fixed;
-    }
-
+@media only screen and (max-width: 768px) {
     #navbar {
         position: fixed;
         top: 10%;
@@ -391,8 +469,9 @@ hr {
 
     #navbar.show {
         left: 0;
-        width: 100%;
         padding: 0 2rem;
+        top: 20%;
+        width: 100%;
     }
 
     #navbar a {
@@ -408,6 +487,7 @@ hr {
     }
 
     #home {
+
         display: flex;
         flex-direction: column;
         row-gap: 3rem;
@@ -431,52 +511,103 @@ hr {
         flex-basis: 20%;
         position: relative;
     }
+}
 
-    .scroll p {
-        transform: rotate(0deg);
-        width: 7rem;
-    }
-
-    .mva::before, .mva::after {
-        animation: scroll 2.5s ease-in-out infinite;
-        content: none;
-        left: 40%;
-        position: absolute;
-        top: 50%;
-    }
-
-    @keyframes scroll {
-        0% {
-            transform: translate(0, 0);
-        }
-        50% {
-            transform: translate(0, 70px);
-        }
-        100% {
-            transform: translate(0, 0);
-        }
-        }
-
-    .gap {
-        display: flex;
-        flex-direction: column;
-        row-gap: 2rem;
-    }
-
-    .works-preview2 {
-        display: flex;
-        flex-direction: column-reverse;
-        row-gap: 2rem;
-    }
-
-    .about-details {
-        display: flex;
-        flex-direction: column;
-        row-gap: 2rem;
-    }
-
-    #footer {
-        display: block;
-        text-align: center;
+@media only screen and (max-width: 640px) {
+    #navbar {
+        position: fixed;
+        top: 10%;
+        left: -100%;
+        width: 0%;
+        max-width: 31rem;
+        height: 100%;
+        background-color: hsl(11, 45%, 24%);
+        transition: all 500ms ease-in-out;
+        z-index: 100;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    #navbar {
+        position: fixed;
+        top: 10%;
+        left: -100%;
+        width: 0%;
+        max-width: 30rem;
+        height: 100%;
+        background-color: hsl(11, 45%, 24%);
+        transition: all 500ms ease-in-out;
+        z-index: 100;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #navbar {
+        position: fixed;
+        top: 10%;
+        left: -100%;
+        width: 0%;
+        max-width: 23rem;
+        height: 100%;
+        background-color: hsl(11, 45%, 24%);
+        transition: all 500ms ease-in-out;
+        z-index: 100;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #navbar {
+        position: fixed;
+        top: 10%;
+        left: -100%;
+        width: 0%;
+        max-width: 15rem;
+        height: 100%;
+        background-color: hsl(11, 45%, 24%);
+        transition: all 500ms ease-in-out;
+        z-index: 100;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #navbar {
+        position: fixed;
+        top: 10%;
+        left: -100%;
+        width: 0%;
+        max-width: 13rem;
+        height: 100%;
+        background-color: hsl(11, 45%, 24%);
+        transition: all 500ms ease-in-out;
+        z-index: 100;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    #navbar {
+        position: fixed;
+        top: 10%;
+        left: -100%;
+        width: 0%;
+        max-width: 9rem;
+        height: 100%;
+        background-color: hsl(11, 45%, 24%);
+        transition: all 500ms ease-in-out;
+        z-index: 100;
+    }
+}
+
+@media only screen and (max-width: 240px) {
+    #navbar {
+        position: fixed;
+        top: 10%;
+        left: -100%;
+        width: 0%;
+        max-width: 11rem;
+        height: 100%;
+        background-color: hsl(11, 45%, 24%);
+        transition: all 500ms ease-in-out;
+        z-index: 100;
+    }
+}
+
