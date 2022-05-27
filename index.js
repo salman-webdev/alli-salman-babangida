@@ -38,6 +38,7 @@ function fixedHeader() {
   }
 }
 
+//MENU TOGGLE BUTTON//
 const menu = document.querySelector(".menu-bar");
 const menuBar = document.querySelector("#navbar");
 console.log(menu); 
