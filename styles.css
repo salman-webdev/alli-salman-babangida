@@ -297,7 +297,7 @@ hr {
     color: hsl(231, 23%, 12%);
     font-size: 27px;
     margin-right: 0.9rem;
-    padding: 20px;
+    padding: 10px;
 }
 
 #label {
@@ -469,7 +469,7 @@ hr {
         top: 10%;
         left: -100%;
         width: 0%;
-        max-width: 35rem;
+        max-width: 9rem;
         height: 100%;
         background-color: hsl(231, 23%, 12%);
         transition: all 500ms ease-in-out;
@@ -477,9 +477,11 @@ hr {
     }
 
     #navbar.show {
+        cursor: pointer;
         left: 0;
         padding: 0 2rem;
         top: 20%;
+        transition: all 300ms ease-in-out;
         width: 100%;
     }
 
@@ -489,6 +491,8 @@ hr {
         color: hsl(0, 0%, 85%);
         cursor: pointer;
         margin: 2rem 0;
+        text-align: center;
+        width: 4rem;
     }
 
     .menu-bar {
@@ -522,34 +526,6 @@ hr {
     }
 }
 
-@media only screen and (max-width: 640px) {
-    #navbar {
-        max-width: 30rem;
-    }
-
-    .fixed-header {
-        margin-top: 0;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .fixed-header {
-        margin-top: 2rem; 
-    }
-}
-
-@media only screen and (max-width: 540px) {
-    #navbar {
-        max-width: 26rem;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    #navbar {
-        max-width: 17rem;
-    }
-}
-
 @media only screen and (max-width: 441px) {
     .owner {
         display: block;
@@ -562,37 +538,23 @@ hr {
     }
 }
 
-@media only screen and (max-width: 384px) {
-    #navbar {
-        max-width: 15rem;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    #navbar {
-        max-width: 13rem;
-    }
-
+@media only screen and (max-width: 360px) {
     .fixed-header {
         margin-top: 1rem; 
     }
 }
 
-@media only screen and (max-width: 289px) {
-    #navbar {
-        max-width: 9rem;
+@media only screen and (max-width: 320px) {
+    .fa2x {
+        margin-right: 0;
     }
+}
 
+@media only screen and (max-width: 289px) {
     .socials {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
-    }
-}
-
-@media only screen and (max-width: 280px) {
-    #navbar {
-        max-width: 9rem;
     }
 }
 
