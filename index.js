@@ -41,8 +41,10 @@ function fixedHeader() {
 //MENU TOGGLE BUTTON//
 const menu = document.querySelector(".menu-bar");
 const menuBar = document.querySelector("#navbar");
+const icon = document.querySelector(".fa-bars")
 console.log(menu); 
 
 menu.addEventListener("click", function (){
-    menuBar.classList.toggle("show")
+    menuBar.classList.toggle("show");
+    icon.classList.toggle("fa-times");
 });
