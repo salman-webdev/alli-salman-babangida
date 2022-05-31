@@ -61,7 +61,7 @@ ul li {
 
 hr {
     border: none;
-    border-top: 2px dashed hsl(0, 0%, 85%);
+    border-top: 2px groove hsl(0, 0%, 85%);
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
@@ -477,7 +477,6 @@ hr {
     }
 
     #navbar.show {
-        cursor: pointer;
         left: 0;
         padding: 0 2rem;
         top: 20%;
