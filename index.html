@@ -172,10 +172,19 @@
             <p><i class="fa-solid fa-envelope fa2x"></i></i><span class="my-name"> alli.salman16@gmail.com</span></p>
         </div>
         <div class="intro gap" data-aos="fade-right" data-aos-duration="3000">
-            <form action="https://formsubmit.co/alli.salman16@gmail.com" method="POST">
+            <form action="https://formsubmit.co/6a27f4fe30159911b45c4ba07223b4b9" method="POST">
+                <!--HONEYPOT-->
+                <input type="text" name="_honey" style="display: none;">
+
+                <!--DISABLE CAPTCHA-->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!--SUCCESS MESSAGE LINK -->
+                <input type="hidden" name="_next" value="https://salmanroug.github.io/Alli-Salman-Babangida/success.html">
+
                 <div class="form-group">
-                    <label for="name" id="label"> Your Name</label>
-                    <input type="text" name="name" id="name"  class="form-control" placeholder="Your name" required>
+                    <label for="name" id="label"> Your Full Name</label>
+                    <input type="text" name="name" id="name"  class="form-control" placeholder="Your full name" required>
                 </div>
                
                 <div class="form-group">
@@ -219,9 +228,6 @@
     <script>
       AOS.init();
     </script>
-
-    <!--JAVASCRIPT FOR SENDING EMAIL-->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
 
