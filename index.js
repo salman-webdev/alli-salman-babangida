@@ -48,3 +48,4 @@ menu.addEventListener("click", function (){
     menuBar.classList.toggle("show");
     icon.classList.toggle("fa-times");
 });
+
