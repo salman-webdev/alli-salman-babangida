@@ -320,6 +320,10 @@ hr {
     padding: 9px;
 }
 
+#additional-comment {
+    resize: none;
+}
+
 .form-control:focus, #additional-comment:focus {
     outline: 2px solid hsl(157, 71%, 82%);
 }
