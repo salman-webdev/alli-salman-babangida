@@ -1,0 +1,3 @@
+Sitemap: vhttps://salmanroug.github.io/alli-salman-babangida//sitemap.xml
+Sitemap: https://salmanroug.github.io/alli-salman-babangida//index
+Sitemap: https://salmanroug.github.io/alli-salman-babangida//works
